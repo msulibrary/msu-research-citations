@@ -1,0 +1,37 @@
+#force text file to process as php
+<files citation-batch.txt>
+ForceType application/x-httpd-php
+</files>
+<files citation-batch.csv>
+ForceType application/x-httpd-php
+</files>
+#force xml files to process as php
+<files feed.xml>
+ForceType application/x-httpd-php
+</files>
+<files sitemap.xml>
+ForceType application/x-httpd-php
+</files>
+
+#rewrite rules for URLs and directory patterns
+#https://httpd.apache.org/docs/current/mod/mod_rewrite.html#RewriteEngine
+#https://httpd.apache.org/docs/current/mod/core.html#options
+#https://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewritebase
+#https://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewriteoptions
+<IfModule mod_rewrite.c>
+  #Options +FollowSymLinks
+  #Options +SymLinksIfOwnerMatch
+  RewriteEngine On
+
+  #check for 200 header, legitimate url 
+  RewriteCond %{ENV:REDIRECT_STATUS} 200
+  RewriteRule .* - [L]
+
+  #change arc.lib.montana.edu/msu-research-citations/item.php?id=5 to arc.lib.montana.edu/msu-research-citations/item/5
+  RewriteBase /msu-research-citations/
+  RewriteRule ^item/([0-9]+) item.php?id=$1 [NC,QSA]
+
+  #remove need to have .php extension in filename
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^(.*)$ $1.php [L,QSA]
+</IfModule>
