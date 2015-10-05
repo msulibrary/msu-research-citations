@@ -4,7 +4,7 @@ A research citation app to capture citation information from various academic da
 
 ### Creators
 - Leila Sterman 
-- Jason A. Clark [@jaclark] [jason clark]
+- [Jason A. Clark jason clark] [@jaclark]
 - James Espeland
 
 ### Version
