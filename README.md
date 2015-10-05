@@ -3,8 +3,8 @@ A research citation app to capture citation information from various academic da
 - The initial release includes only the feed parsing view/listing, CSS, images, and database model. For further info and access to additional search/browse/admin files, feel free to contact us directly.   
 
 ### Creators
-- Leila Sterman 
-- Jason A. Clark web: [jason clark] twitter:[@jaclark]
+- Leila Sterman twitter: [@leila]
+- Jason A. Clark web: [jason clark] twitter: [@jaclark]
 - James Espeland
 
 ### Version
@@ -16,6 +16,7 @@ A research citation app to capture citation information from various academic da
 - PHP
 - Google Feeds API ()
 
-[jason clark]: <http://www.jasonclark.info>
-[@jaclark]: <http://twitter.com/jaclark>
+[jason clark]: <https://www.jasonclark.info>
+[@jaclark]: <https://twitter.com/jaclark>
+[@leila]: <https://twitter.com/calamityleila>
 [jQuery]: <http://jquery.com>
