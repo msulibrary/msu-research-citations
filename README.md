@@ -16,7 +16,7 @@ A research citation app to capture citation information from various academic da
 - PHP
 - Google Feeds API ()
 
-[jason clark]: <https://www.jasonclark.info>
+[jason clark]: <http://www.jasonclark.info>
 [@jaclark]: <https://twitter.com/jaclark>
 [@leila]: <https://twitter.com/calamityleila>
 [jQuery]: <http://jquery.com>
