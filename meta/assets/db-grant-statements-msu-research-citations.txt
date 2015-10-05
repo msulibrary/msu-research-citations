@@ -1,0 +1,4 @@
+GRANT SELECT,UPDATE,INSERT,DELETE,LOCK TABLES,DROP,CREATE,ALTER,INDEX ON msu_research_citations.* TO YOUR-ADMIN-DBUSER-HERE@localhost IDENTIFIED BY 'YOUR-ADMIN-DB-PASSWORD-HERE';
+GRANT SELECT ON msu_research_citations.* TO YOUR-READ-ONLY-DB-USER-HERE@localhost IDENTIFIED BY 'YOUR-READ-ONLY-DB-PASSWORD-HERE';
+
+(This is done one the database: msu_research_citations in an SQL console/command line.)

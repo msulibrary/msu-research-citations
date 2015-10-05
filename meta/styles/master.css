@@ -1,0 +1,135 @@
+/*Styles for DAWS digital collection template
+Author:   Jason A. Clark
+Version:  fluid layout 1.0 -  January 2009
+----------------------------------------------- */
+/* =global default settings
+----------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic,800italic,400,800);
+html, body, form, fieldset {margin:0;padding:0;font:medium Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, address {margin:1em 0;padding:0;}
+li, dd, blockquote {margin-left:1em;}
+/* =element-specific settings
+----------------------------------------------- */
+body {background:#ddd url("../img/bg_page.jpg") 0 0 repeat-x;line-height:1.6em;color:#333;}
+h1 {font-size:1.2em;color:#333;margin:15px 0 0 0;}
+h2 {font-size:1.1em;color:#444;margin:0 0 15px 0;}
+h2.mainHeading {width:auto;font-size:1.3em;padding:15px 0 2px 0;border-bottom:1px dotted #333;}
+h3 {font:1em;color:#660000;margin:0 0 15px 0;}
+/* =links
+----------------------------------------------- */
+a, a:visited {color:#258;text-decoration:none;border-bottom:1px solid #469;}
+html>body a, html>body a:visited { border-bottom-style:dotted;}
+a:hover, a:active {color:#933;border-color:#b55;border-bottom-style:solid;}
+a img {border:none;}
+/* =forms
+----------------------------------------------- */
+form {margin:0;padding:10px 0;border:1px solid #ccc;background:#F2F2F2;}
+form.search {text-align:center;}
+fieldset {border:none;margin:0;padding:0;}
+/*fieldset {border:1px solid #ccc;}*/
+legend {font:1.1em georgia,times,serif;color:#213C69;padding:0.2em;text-align:right;}
+label {font-size:1.3em;color:#213C69;vertical-align:middle;cursor:pointer;}
+input, select{vertical-align:middle;}
+input:focus, textarea:focus {background:#ffc;}
+input.text, textarea, select {width:20em;font-size:1em;padding:3px;margin:1px 0;border:1px solid #ccc;}
+input.submit {padding:2px 5px;font-weight:bold;font-size:.95em;background:#6A7389;color:#fff;padding:1px 2px;border-right:1px solid #283043;border-bottom:1px solid #283043;border-top:1px solid #9097A2;border-left:1px solid #9097A2;}
+form#embedForm {margin:0 0 0 15px;padding:2px 0 0 0;width:85%;border:none;background:none;}
+form#embedForm label {font-size:.95em;color:#333;}
+form#embedForm input {width:85%;font-size:.75em;margin-left:0;padding-left:0;}
+/* =tabbed content box (includes ul#tabs and div#tabContents)
+----------------------------------------------- */
+ul#tabs {margin:0;padding-bottom:35px;list-style-type:none;border-bottom:1px solid #ccc;}
+ul#tabs li {margin:0;padding:0;display:inline;}
+#tabs a:link, #tabs a:visited {margin-right:8px;padding:10px;background:#F2F2F2;border:1px solid #ccc;color:#666;float:left;line-height:14px;text-decoration:none;border-top-left-radius:4px;border-top-right-radius:4px;-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;}
+#tabs a:link.active, #tabs a:visited.active	{color:#000;background:#fff;border-bottom:1px solid #fff;}
+#tabs a:hover {color:#001155;}
+body.default #tabs li#tab1 a, body.advanced #tabs li#tab2 a, body.all #tabs li#tab3 a {color:#000;font-weight:bold;background:#fff;border-bottom:1px solid #fff;}
+div#tabContents {margin:0 0 15px 0;padding:15px;clear:both;background:#fff;border:1px solid #ccc;border-top:none;}
+/* =miscellaneous and special global settings
+----------------------------------------------- */
+hr {border:0;color:#CCCEC6;background-color:#CCCEC6;height:1px;}
+.highlight {background-color:yellow;}
+.toggle {text-align:right;}
+.controls {display:block;float:right;width:auto;padding-left:20px;font:.85em verdana,arial,sans-serif;}
+.descript {text-align:left;padding:0 15px;}
+p.skipNav {position:absolute;left:-1000em;width:20em;}
+.expand {line-height:12px;background:url("../img/expand.gif") 0 50% no-repeat;padding-left:16px;}
+#sample {background:url("../img/sample.gif") 0 50% no-repeat;padding-left:17px;}
+.contact {line-height:10px;background:url("../img/bubble.gif") 0 50% no-repeat;padding-left:14px;}
+.xml {line-height:10px;background:url("../img/feed.gif") 0 50% no-repeat;padding-left:14px;}
+.embed {line-height:16px;background:url("../img/cog.png") 0 50% no-repeat;padding-left:18px;}
+.permalink {line-height:16px;background:url("../img/link.png") 0 50% no-repeat;padding-left:18px;}
+.quality {line-height:16px;background:url("../img/icon_pdf.gif") 0 50% no-repeat;padding-left:18px;}
+.share {line-height:16px;background:url("../img/share.gif") 0 50% no-repeat;padding-left:18px;}
+.object {display:block;float:left;width:auto;margin:0;padding:0 15px 10px 0;}
+p#cloud-view {padding:25px 0;}
+p#cloud-view a.size1 {font-size:.95em;}
+p#cloud-view a.size2 {font-size:1.1em;font-weight:bold;}
+p#cloud-view a.size3 {font-size:1.2em;font-weight:bold;}
+p#cloud-view a.size4 {font-size:1.3em;font-weight:bold;}
+p#cloud-view a.size5 {font-size:1.5em;font-weight:bold;}
+p#cloud-view a.size6 {font-size:1.6em;font-weight:bold;}
+p#cloud-view a.size7 {font-size:1.7em;font-weight:bold;}
+p#cloud-view a.size8 {font-size:1.8em;font-weight:bold;}
+p#cloud-view a.size9 {font-size:2.5em;font-weight:bold;}
+/* =Navigation (sitewide)
+----------------------------------------------- */
+p#toggle {text-align:right;width:100%;}
+p#toggle a {line-height:11px;background:url("../img/bullet.gif") 0 50% no-repeat;padding-left:22px;}
+.return {float:right;}
+a.bck {background:url("../img/bck-arrow.gif") 0 50% no-repeat;padding-left:16px;}
+a.fwd {background:url("../img/fwd-arrow.gif") 0 50% no-repeat;padding-left:16px;}
+/* =contain
+----------------------------------------------- */
+.fullWidth div#contain {width:95%;margin:0 auto;min-width:500px;max-width:1400px;margin:0 auto;background-color:#fff;}
+.rightCol div#contain {width:95%;margin:0 auto;min-width:500px;max-width:1400px;background-color:#fff;}
+/* =mastHead
+----------------------------------------------- */
+div#mastHead {background-color:#213C69;height:54px;}
+#mastHead h1 {position:absolute;top:0;margin:23px 0 0 10px;font-size:1.3em;color:#fff;background:#213C69 url("../img/msu-logo.gif") 0 50% no-repeat;}
+#mastHead h1 a {color:#fff;text-decoration:none;border:none;padding-left:31px;}
+#mastHead img {position:absolute;top:0;border:none;}
+#mastHead p {color:#fff;padding:0 10px 3px 0;margin:0;font-size:0.75em;text-align:right;}
+#mastHead p a {color:#fff;text-decoration:underline;border:none;}
+/* =main
+----------------------------------------------- */
+div#main {float:right;width:70%;background:#fff url("../img/whiteshadow.jpg") repeat-x;z-index:100;/*set default height of div - this is the height that IE6 and other older browsers will use*/height:500px;}
+html>body div#main {/*reset the height for compliant browsers*/height:auto;min-height:500px;}
+.rightCol div#main {float:left;width:76%;}
+.fullWidth div#main {width:100%;display:block;float:none;}
+div#main .gutter {padding:15px;}
+div#main h2 strong {padding:2px 5px;background-color:#ffff66} /*highlights search terms and number of results*/
+div#main h3 strong {padding:2px 5px;background-color:#ffff66} /*highlights search terms and number of results*/
+div#main ul.list {list-style:none;}
+div#main ul.boxes {float:left;width:100%;margin:10px 0 20px 0;padding:0 0 10px 0;list-style:none;text-align:left;}
+div#main ul.boxes li {background-image:none;position:relative;float:left;width:31%;margin:0 2px 0 0;padding:0 .5em .5em .5em;}
+div#main ul.boxes li h2.mainHeading {background:url("../img/bullet.gif") 0 75% no-repeat;padding-left:21px;}
+div#main ul.boxes li p {margin:0;padding:0 0 3px 5px;}
+ul#listColumns {float:left;width:100%;margin:0;padding:0 0 10px 0;list-style:none;text-align:left;}
+ul#listColumns li {background-image:none;position:relative;float:left;width:45%;margin:0 2px 0 0;padding:0 .5em .5em .5em;}
+ul#block {float:left;width:100%;margin:0;padding:0;list-style:none;text-align:left;}
+ul#block li {display:inline;display:inline-block;width:25em;margin:0;padding:10px;border-bottom:2px solid #f2f2f2;}
+#main ul.item {float:left;width:100%;margin-bottom:10px;list-style:none;}
+#main ul.item li {margin:0;padding:0;}
+#main ul.metadata {float:left;width:100%;margin:0;padding:0;list-style:none;text-align:left;}
+ul.metadata li.describe {float:left;position:relative;width:70%;margin:0;padding:0 20px 0 0;}
+ul.metadata li.action {float:left;position:relative;width:27%;margin:0;padding:0;}
+#main ul.metadata li p {margin:0 0 0 15px;padding:2px 20px 0 0;}
+#main ul.metadata ul.authorList {margin:0 0 0 50px;list-style-type:disc}
+/* =sideBar
+----------------------------------------------- */
+div#sideBar {float:left;width:20%;color:#001155;z-index:1;}
+.rightCol div#sideBar {float:right;width:24%;background:#fff url("../img/whiteshadow.jpg") repeat-x;}
+.fullWidth div#sideBar {width:100%;display:none;float:none;}
+div#sideBar .gutter {padding:15px;}
+/* =footer
+----------------------------------------------- */
+div#footer {clear:both;padding:10px 0;color:#7e7e7e;background-color:#ddd;}
+#footer ul {float:left;width:100%;margin:0;padding:0;font-size:0.85em;border-top:1px solid #ecebeb;background-color:#ddd;}
+#footer ul li {display:inline;list-style:none;margin:0;padding:3px 7px;}
+#footer ul li a {color:#7e7e7e;text-decoration:underline;border:none;}
+#footer ul li#info {float:left;width:auto;}
+#footer ul li#links {float:right;width:auto;}
+span.entryField {
+    color: #c0c0c0;
+}
