@@ -63,6 +63,5 @@ if ($_SERVER['HTTP_HOST'] == "arc.lib.montana.edu") {
 <div id="contain">
 <div id="mastHead">
   <h1><a href="<?php echo dirname($_SERVER['PHP_SELF']); ?>/index.php">Montana State University Research Citations - Montana State University (MSU) Library</a></h1>
-  <p class="skipNav"><a href="#mainContent" title="main content">skip navigation</a></p>
-  <p><a href="http://www.lib.montana.edu/digital/">Digital Collections Home</a> | <a href="<?php echo dirname($_SERVER['PHP_SELF']); ?>/m/">Mobile</a></p>
+  <p class="hidden"><a href="#mainContent" title="main content">skip navigation</a></p>
 </div><!-- end masthead div -->
